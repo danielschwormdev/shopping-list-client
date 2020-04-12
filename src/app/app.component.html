@@ -1,0 +1,15 @@
+<head>
+</head>
+<body [ngStyle]="getBody()">
+    <header>
+        <app-header></app-header>
+    </header>
+    <nav [ngStyle]="getNav()">
+        <app-sidebar></app-sidebar>
+    </nav>
+    <main>
+        <div class="list">
+            <router-outlet></router-outlet>
+        </div>
+    </main>
+</body>
